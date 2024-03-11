@@ -62,10 +62,43 @@ int main() {
 	cout << endl;
 
 }
+// generalised syntax of dp on tress
+int solve(int &res,TreeNode* root){
+
+  if(root==null) return 0;
+
+  int l = solve(res,root->left);
+  int r = solve(res,root->right);
+
+  int temp = max(temp,(1+l+r))
+  int ans = max(temp,(1+l+r));
+  res = max(res,ans);
+
+  return temp;
+
+}
+
+int main(){
+  solve(INT_MIN,root);
+  return res;
+}
 
 
-rolling hash value
+// rolling hash value
+int p = 31;
+long long int m = 1e9 + 7;
+int getstringkey(string key){
+int val = 0;
+int p1 = 1;
+for(auto i : key){
+val += (i-('a'/'A')+1)*p1)%m)
+p1 = (p1*p)%m;
 
+}
+
+
+
+}
 // for leetcode contest
 auto init = []() {
     ios::sync_with_stdio(false);
