@@ -1,6 +1,23 @@
+
 /*
-to do ;-
-Policy based data structures
+int mex(vi &arr)
+{
+    int n = arr.size();
+    unordered_map<int,int> mp;
+    for (int i = 0; i < n; i++)
+    {
+        mp[arr[i]]++;
+    }
+    for (int i = 0; i <= n + 1; i++)
+    {
+        if (mp[i] == 0)
+        {
+            return i;
+        }
+    }
+    return n + 1;
+}
+ 
 #include<bits/stdc++.h>
 
 #include<ext/pb_ds/assoc_container.hpp>
