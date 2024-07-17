@@ -1,5 +1,13 @@
 
 /*
+leetcode fast i/o
+const static auto fast = [] {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return 0;
+}();
+
 binary exponentiation
 
 ll binpow(ll a,ll b){
